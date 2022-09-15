@@ -8,28 +8,61 @@
     <title>Document</title>
   </head>
   <body>
-    <section class="main">
-      <header class="navi">
-        <a href=""><img src="punch.jpg" alt="" class="logo" /></a>
+    <div class="pre-nav">
+      <input type="text" class="input" placeholder="search" />
+<button class="button">Go</button>
+    </div>
+  <header>
+<img src="punch.jpg" alt="" class="logo">
+<div class="menuToggle" onclick="toggleMenu()"></div>
+      <ul class="navigation">
+        <li><a href="#" onclick="toggleMenu()" >Home</a></li>
+        <li><a href="#banner" onclick="toggleMenu()"  >News</a></li>
 
-        <ul class="nav">
-          <li><a href="">Home</a></li>
-          <li><a href="">News</a></li>
-          <li><a href="">Sports</a></li>
-          <li><a href="">Politics</a></li>
-          <li><a href="">Foreign</a></li>
-          <li><a href="">Metro</a></li>
-          <li><a href="">Entertainment</a></li>
-          <li><a href="">Business</a></li>
-          <li><a href="">Health</a></li>
-        </ul>
-      </header>
+        <li><a href="#sports"  onclick="toggleMenu()" >Sports</a></li>
+        <li><a href="#politics"   onclick="toggleMenu()">Politics</a></li>
+        <li><a href="#foreign"  onclick="toggleMenu()" >Foreign</a></li>
+        <li><a href="#ent" onclick="toggleMenu()" >Entertainment</a></li>
+        <li><a href="#banner"  onclick="toggleMenu()">Health</a></li>
+        <li><a href="#banner"  onclick="toggleMenu()">Technology</a></li>
+        <li><a href="#metro"  onclick="toggleMenu()">Metro</a></li>
+       
+      
+      </ul>
+    </header>
 
-      <div class="pre-nav">
-        <input type="text" class="input" placeholder="search" />
-        <button class="button">go</button>
-      </div>
-    </section>
+
+    <!--
+
+      <section class="main">
+        <header class="navi">
+          <a href=""><img src="punch.jpg" alt="" class="logo" /></a>
+  
+          
+          <ul class="nav">
+  
+             <li><a href="">Home</a></li>
+             <li><a href="">News</a></li>
+             <li><a href="">Sports</a></li>
+             <li><a href="">Politics</a></li>
+             <li><a href="">Foreign</a></li>
+             <li><a href="">Metro</a></li>
+             <li><a href="">Entertainment</a></li>
+             <li><a href="">Business</a></li>
+             <li><a href="">Health</a></li>
+            
+  
+  
+  
+          </ul>
+        </header>
+  
+        <div class="pre-nav">
+          <input type="text" class="input" placeholder="search" />
+          <button class="button">go</button>
+        </div>
+      </section>
+    -->
 
     <section class="body">
       <div class="content">
@@ -150,7 +183,7 @@
         
       
 
-    <section class="top-videos">
+    <section class="top-videos" id="videos">
       <ul>
         <li>
           <a href=""><h3>Top Videos</h3></a>
@@ -189,7 +222,7 @@
       </ul>
     </section>
 
-    <div class="met-top">
+    <div class="met-top" id="metro">
       <ul>
         <li>
           <a href=""><h3>Metro News</h3></a>
@@ -223,7 +256,7 @@
   </section>
 
 
-<div class="business-title">
+<div class="business-title" id="business">
 
   <ul><li>Business</li></ul>
 </div>
@@ -241,7 +274,7 @@
 
   <!--Politics-->
 
- <div class="politics-top">
+ <div class="politics-top" id="politics">
       <ul>
         <li>
           Politics News
@@ -277,7 +310,7 @@
 
   <!--Sports Section-->
 
-  <div class="sports-title">
+  <div class="sports-title" id="sports">
 
   <ul><li>Sports</li></ul>
 </div>
@@ -315,7 +348,7 @@
 
    <!--Entertainment-->
 
- <div class="entertainment-top">
+ <div class="entertainment-top" id="ent">
       <ul>
         <li>
           <a href=""><h3>Entertainment</h3></a>
@@ -616,5 +649,7 @@
         <input type="text" class="in" placeholder="subscribe" />
       </div>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
