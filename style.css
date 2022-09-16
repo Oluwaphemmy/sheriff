@@ -1000,9 +1000,9 @@ td {
 }*/
 
   /*media query*/
-  @media screen and (max-width: 1200px) {
+  @media screen and (min-width: 400px) {
     header {
-      width: 215%;
+      width: 99%;
     }
     header .logo {
       margin-left: -95px;
@@ -1284,7 +1284,7 @@ td {
   }
   .menuToggle {
     position: relative;
-    width: 40px;
+    width: 5%;
     height: 40px;
     background: url(img/menu.png);
     background-size: 30px;
